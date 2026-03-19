@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Цветной экран</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 20px;
+        }
+
+        button {
+            padding: 20px 40px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            color: white;
+            border-radius: 8px;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .green {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+
+<div class="buttons">
+    <button class="red" onclick="setRed()">КРАСНАЯ</button>
+    <button class="green" onclick="setGreen()">ЗЕЛЕНАЯ</button>
+</div>
+
+<script>
+    function setRed() {
+        document.body.style.backgroundColor = "red";
+    }
+
+    function setGreen() {
+        document.body.style.backgroundColor = "green";
+    }
+</script>
+
+</body>
+</html>
